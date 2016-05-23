@@ -1,7 +1,7 @@
 (function(){
-  var diandianController = angular.module("diandianController",[]);
+  var todayEventController = angular.module("todayEventController",[]);
 
-  diandianController.controller("todayEvent",['$scope',function($scope){
+  todayEventController.controller("todayEvent",['$scope',function($scope){
  	
   }]);
 })();
