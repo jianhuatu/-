@@ -3,7 +3,11 @@
 
   loginController.controller("login",['$scope','sectionHeight','user',function($scope,sectionHeight,user){
   	$scope.heightVal = sectionHeight;
-  	$scope.subLogin = user.login;
+  	$scope.subLogin = function(){
+  		var userTel = $scope.userTel;
+      var userPwd = $scope.userPwd;
+      user.login(userTel,userPwd);
+  	};
   	$scope.goRegister = user.goRigister;
   }]);
 })();

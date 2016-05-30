@@ -3,7 +3,12 @@
 
   registerController.controller("register",['$scope','sectionHeight','user',function($scope,sectionHeight,user){
  	$scope.heightVal = sectionHeight;
-  	$scope.subRegister = user.register;
+  	$scope.subRegister = function(){
+  		var userName = $scope.userName;
+  		var userTel = $scope.userTel;
+  		var userPwd = $scope.userPwd;
+  		user.register(userName,userTel,userPwd);
+  	};
   	$scope.goLogin = user.goLogin;
   }]);
 })();
