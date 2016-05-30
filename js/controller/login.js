@@ -8,7 +8,6 @@
       var userPwd = $scope.userPwd;
       user.login(userTel,userPwd);
   	};
-    $scope.test = 111;
   	$scope.goRegister = user.goRigister;
   }]);
 })();
