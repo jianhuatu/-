@@ -6,12 +6,14 @@
       'loginController',
       'registerController',
 
+      'alertServices',
       'headerServices',
       'clientSizeServices',
       'sectionSizeServices',
       'userServices',
 
-      'eventDirective'
+      'eventDirective',
+      'alertDirective'
     ]);
 
   diandianApp.config(["$routeProvider","$locationProvider","$httpProvider",function($routeProvider,$locationProvider,$httpProvider){

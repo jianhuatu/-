@@ -11,4 +11,8 @@
   clientSizeServices.factory("clientWidth",[function(){
     return clientWidth;
   }]);
+
+  clientSizeServices.factory("scrollTop",[function(){
+  	return document.documentElement.scrollTop || document.body.scrollTop;
+  }]);
 })();

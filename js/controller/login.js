@@ -8,6 +8,8 @@
       var userPwd = $scope.userPwd;
       user.login(userTel,userPwd);
   	};
-  	$scope.goRegister = user.goRigister;
+  	$scope.goRegister = function(){
+      user.goRigister();
+    }
   }]);
 })();

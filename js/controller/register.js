@@ -9,6 +9,8 @@
   		var userPwd = $scope.userPwd;
   		user.register(userName,userTel,userPwd);
   	};
-  	$scope.goLogin = user.goLogin;
+  	$scope.goLogin = function(){
+      user.goLogin();
+    }
   }]);
 })();
