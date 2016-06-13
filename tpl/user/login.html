@@ -5,6 +5,10 @@
 	<div class="login">
 		<input class="ipt" type="text" placeholder="请输入手机号" ng-model="userTel"/>
 		<input class="ipt" type="password" placeholder="请输入密码" ng-model="userPwd"/>
+		<p class="ipt clearfix">
+			<input type="text" placeholder="验证码" ng-model="code" class="yzm-ipt" />
+			<span class="yzm"><img src="img/pic/yzm.png"></span>
+		</p>
 		<a href="javascript:void(0);" class="btn" ng-tap="subLogin">登录</a>
 		<p class="forget">忘记密码？</p>
 		<!-- <fieldset class="other">
