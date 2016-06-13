@@ -1,9 +1,19 @@
 (function(){
   var diandianApp = angular.module("diandianApp",[
       'ngRoute',
+
       'todayEventController',
       'loginController',
-      'registerController'
+      'registerController',
+
+      'alertServices',
+      'headerServices',
+      'clientSizeServices',
+      'sectionSizeServices',
+      'userServices',
+
+      'eventDirective',
+      'alertDirective'
     ]);
 
   diandianApp.config(["$routeProvider","$locationProvider","$httpProvider",function($routeProvider,$locationProvider,$httpProvider){
@@ -18,6 +28,7 @@
         templateUrl : "tpl/user/register.html",
         controller : "register"
       });
+      $httpProvider.interceptors.push('authInterceptor');
       $locationProvider.html5Mode(false).hashPrefix("!");
   }]);
 })();

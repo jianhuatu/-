@@ -1,17 +1,19 @@
 <header ng-include src="'tpl/header.html'">
 </header>
-<section>
-	<br>
-	昵称 ： <input type="text"></br>
-	</br>
-	手机号 ： <input type="tel"></br>
-	</br>
-	密码 : <input type="password"></br>
-	</br>
-	验证码 : <input type="text"><span>我是图片</span></br>
-	</br>
-	<input type="submit" value="确定">
-	<div style="height: 50px;"></div>
+<section class="logobg" style="height:{{heightVal}}px;">
+	<div class="login">
+		<input class="ipt" type="text" placeholder="昵称" ng-model="userName"/>
+		<input class="ipt" type="text" placeholder="手机号(仅支持中国大陆)" ng-model="userTel"/>
+		<input class="ipt" type="password" placeholder="密码(不小于6位)" ng-model="userPwd"/>
+		<!-- <input class="ipt" type="text" placeholder="验证码" ng-model="code"/> -->
+		<a href="javascript:void(0);" class="btn" ng-tap="subRegister">注册</a>
+		<fieldset class="other">
+			<legend>或</legend>
+			<div class=""></div>
+		</fieldset>
+	</div>
+	<div class="login-bot">
+		<a href="javascipt:void(0)" ng-tap="goLogin">还没有账号，立即注册</a>
+	</div>
 </section>
-<div ng-include src="'tpl/nav.html'">
-</div>
+<ng-alert></ng-alert>
