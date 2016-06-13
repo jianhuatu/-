@@ -1,15 +1,16 @@
-<header ng-include src="'tpl/header.html'">
-</header>
-<section class="logobg" style="height:{{heightVal}}px;">
+<section class="logobg">
+	<div class="logo">
+		<img src="img/pic/login-logo.png">
+	</div>
 	<div class="login">
 		<input class="ipt" type="text" placeholder="请输入手机号" ng-model="userTel"/>
 		<input class="ipt" type="password" placeholder="请输入密码" ng-model="userPwd"/>
 		<a href="javascript:void(0);" class="btn" ng-tap="subLogin">登录</a>
 		<p class="forget">忘记密码？</p>
-		<fieldset class="other">
+		<!-- <fieldset class="other">
 			<legend>或</legend>
 			<div class=""></div>
-		</fieldset>
+		</fieldset> -->
 	</div>
 	<div class="login-bot">
 		<a href="javascipt:void(0)" ng-tap="goRegister">还没有账号，立即注册</a>
