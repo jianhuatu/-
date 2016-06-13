@@ -158,13 +158,18 @@ align-items: center;
 .logo{padding-top: 10%; text-align: center;}
 .logo img{width:80px; height: 125px;}
 .login{padding:10% 10% 0; color: #fff;}
-.login .ipt{margin-bottom: 15px;padding:0 10px; width: 100%; height: 38px; background: rgba(255,255,255,.3); border: 1px solid transparent; box-sizing: border-box;border-radius: 5px;color:#fff;}
+.login .ipt{position: relative; margin-bottom: 15px;padding:0 10px; width: 100%; height: 40px; background: rgba(255,255,255,.3); border: 1px solid transparent; box-sizing: border-box;border-radius: 5px;color:#fff;overflow: hidden;}
 .login .ipt::-webkit-input-placeholder{color:rgba(255,255,255,.8);}
 .login .ipt:focus{
 	color:#fff;
 	animation: glow 800ms ease-out infinite alternate;
 }
-.login .btn{display: inline-block; margin-bottom: 15px;width: 100%;height: 38px; border: 2px solid rgba(255,255,255,.3);border-radius: 5px; box-sizing: border-box; background: none; color: rgba(255,255,255,.8); text-align: center; line-height: 38px;}
+.login .yzm-ipt{width: 70%; height: 38px;line-height: 38px; background:none; color: #fff;}
+.login .yzm-ipt::-webkit-input-placeholder{color:rgba(255,255,255,.8);}
+.login .yzm{position: absolute; right: 0;top: 0; display: inline-block; width: 30%;}
+.login .yzm img{width: 100%; height: 38px;}
+
+.login .btn{display: inline-block; margin-bottom: 15px;width: 100%;height: 40px; border: 2px solid rgba(255,255,255,.3);border-radius: 5px; box-sizing: border-box; background: none; color: rgba(255,255,255,.8); text-align: center; line-height:40px;}
 .login .btn:hover{/*animation: glow 800ms ease-out infinite alternate;*/}
 .login .forget{ text-align: right;}
 
